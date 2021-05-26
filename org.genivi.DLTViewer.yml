@@ -27,6 +27,11 @@ modules:
       - type: archive
         url: https://github.com/GENIVI/dlt-viewer/archive/v2.21.2.tar.gz
         sha256: 125bcbecc147837c7b18162f95ccd301a1def2aefb394b8ea2c759df74dce568
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/GENIVI/dlt-viewer/releases/latest
+          version-query: .tag_name
+          url-query: "\"https://github.com/GENIVI/dlt-viewer/archive/\" + $version + \".tar.gz\""
       - type: file
         path: org.genivi.DLTViewer.metainfo.xml
 
