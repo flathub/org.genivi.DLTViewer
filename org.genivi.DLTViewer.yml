@@ -11,7 +11,6 @@ finish-args:
   - --share=network
   - --persist=.dlt
   - --env=LD_LIBRARY_PATH=/app/lib/aarch64-linux-gnu:/app/lib/x86_64-linux-gnu
-
 cleanup:
   - /include
   - /share/dlt-viewer/plugins/libdummy*.so
