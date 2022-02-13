@@ -10,18 +10,19 @@ finish-args:
   - --device=all
   - --share=network
   - --persist=.dlt
-  - --env=LD_LIBRARY_PATH=/app/usr/lib/aarch64-linux-gnu:/app/usr/lib/x86_64-linux-gnu
+  - --env=LD_LIBRARY_PATH=/app/lib/aarch64-linux-gnu:/app/lib/x86_64-linux-gnu
+
 cleanup:
-  - /usr/include
-  - /usr/share/dlt-viewer/plugins/libdummy*.so
+  - /include
+  - /share/dlt-viewer/plugins/libdummy*.so
 modules:
   - name: dlt-viewer
     buildsystem: qmake
     config-opts:
       - BuildDltViewer.pro
     post-install:
-      - ln -s usr/bin ${FLATPAK_DEST}/bin
-      - ln -s usr/share ${FLATPAK_DEST}/share
+      - mv ${FLATPAK_DEST}/usr/* ${FLATPAK_DEST}/
+      - ln -s ../share ${FLATPAK_DEST}/usr/share
       - install -Dm644 org.genivi.DLTViewer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/org.genivi.DLTViewer.metainfo.xml
     sources:
       - type: archive
