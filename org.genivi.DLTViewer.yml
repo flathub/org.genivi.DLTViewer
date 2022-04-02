@@ -1,6 +1,6 @@
 app-id: org.genivi.DLTViewer
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: dlt-viewer
 finish-args:
@@ -25,13 +25,14 @@ modules:
       - install -Dm644 org.genivi.DLTViewer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/org.genivi.DLTViewer.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/COVESA/dlt-viewer/archive/v2.21.2.tar.gz
-        sha256: 125bcbecc147837c7b18162f95ccd301a1def2aefb394b8ea2c759df74dce568
+        url: https://github.com/COVESA/dlt-viewer/archive/vTest1.tar.gz
+        sha256: 7223414a1630d52a14c9b10a2aafba45826d8899bfeeb39a66a99fd7b55a408e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/COVESA/dlt-viewer/releases/latest
           version-query: .tag_name
-          url-query: "\"https://github.com/COVESA/dlt-viewer/archive/\" + $version + \".tar.gz\""
+          url-query: '"https://github.com/COVESA/dlt-viewer/archive/" + $version +
+            ".tar.gz"'
       - type: file
         path: org.genivi.DLTViewer.metainfo.xml
 
