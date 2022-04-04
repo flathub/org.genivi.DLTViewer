@@ -31,14 +31,14 @@
   <content_rating type="oars-1.1"/>
   <releases>
     <release version="v2.22.0" date="2022-04-02"/>
-    <release version="2.21.2" date="2021-03-25">
+    <release version="v2.21.2" date="2021-03-25">
       <description>
         <ul>
           <li>Bugfixes</li>
         </ul>
       </description>
     </release>
-    <release version="2.21.1" date="2020-11-03">
+    <release version="v2.21.1" date="2020-11-03">
       <description>
         <ul>
           <li>New Connection type Serial ASCII</li>
@@ -48,28 +48,28 @@
         </ul>
       </description>
     </release>
-    <release version="2.20.3" date="2020-11-03">
+    <release version="v2.20.3" date="2020-11-03">
       <description>
         <ul>
           <li>Bugfixes</li>
         </ul>
       </description>
     </release>
-    <release version="2.20.2" date="2020-07-28">
+    <release version="v2.20.2" date="2020-07-28">
       <description>
         <ul>
           <li>Bugfixes</li>
         </ul>
       </description>
     </release>
-    <release version="2.20.1" date="2020-06-18">
+    <release version="v2.20.1" date="2020-06-18">
       <description>
         <ul>
           <li>Bugfixes</li>
         </ul>
       </description>
     </release>
-    <release version="2.20.0" date="2020-04-14">
+    <release version="v2.20.0" date="2020-04-14">
       <description>
         <ul>
           <li>Add export of dedicated index range in GUI mode</li>
@@ -79,7 +79,7 @@
         </ul>
       </description>
     </release>
-    <release version="2.19.0" date="2019-07-25">
+    <release version="v2.19.0" date="2019-07-25">
       <description>
         <ul>
           <li>Support for High DPI screens</li>
@@ -89,7 +89,7 @@
         </ul>
       </description>
     </release>
-    <release version="2.18.0" date="2016-10-18">
+    <release version="v2.18.0" date="2016-10-18">
       <description>
         <ul>
           <li>Bugfixes and performance improvements</li>
