@@ -3,6 +3,8 @@ runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: dlt-viewer
+rename-icon: dlt-viewer
+rename-desktop-file: dlt-viewer.desktop
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -16,22 +18,27 @@ cleanup:
   - /share/dlt-viewer/plugins/libdummy*.so
 modules:
   - name: dlt-viewer
-    buildsystem: qmake
+    buildsystem: cmake-ninja
     config-opts:
-      - BuildDltViewer.pro
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DDLT_USE_STANDARD_INSTALLATION_LOCATION=ON
+    cleanup:
+      - sdk
+      - doc
+      - plugins/examples
     post-install:
-      - mv ${FLATPAK_DEST}/usr/* ${FLATPAK_DEST}/
-      - ln -s ../share ${FLATPAK_DEST}/usr/share
+      - mv ${FLATPAK_DEST}/share/dlt-viewer/* ${FLATPAK_DEST}/share/
       - install -Dm644 org.genivi.DLTViewer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/org.genivi.DLTViewer.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/COVESA/dlt-viewer/archive/v2.21.2.tar.gz
-        sha256: 125bcbecc147837c7b18162f95ccd301a1def2aefb394b8ea2c759df74dce568
+        url: https://github.com/COVESA/dlt-viewer/archive/v2.22.0.tar.gz
+        sha256: fe3b0c98ac2756c3c3d47ae956f1a65fb5554a47a5c8d2371ae9df5f2b6b505d
         x-checker-data:
           type: json
           url: https://api.github.com/repos/COVESA/dlt-viewer/releases/latest
           version-query: .tag_name
-          url-query: '"https://github.com/COVESA/dlt-viewer/archive/" + $version + ".tar.gz"'
+          url-query: '"https://github.com/COVESA/dlt-viewer/archive/" + $version +
+            ".tar.gz"'
       - type: file
         path: org.genivi.DLTViewer.metainfo.xml
 
