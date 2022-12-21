@@ -3,8 +3,6 @@ runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: dlt-viewer
-rename-icon: dlt-viewer
-rename-desktop-file: dlt-viewer.desktop
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -18,16 +16,12 @@ cleanup:
   - /share/dlt-viewer/plugins/libdummy*.so
 modules:
   - name: dlt-viewer
-    buildsystem: cmake-ninja
+    buildsystem: qmake
     config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DDLT_USE_STANDARD_INSTALLATION_LOCATION=ON
-    cleanup:
-      - sdk
-      - doc
-      - plugins/examples
+      - BuildDltViewer.pro
     post-install:
-      - mv ${FLATPAK_DEST}/share/dlt-viewer/* ${FLATPAK_DEST}/share/
+      - mv ${FLATPAK_DEST}/usr/* ${FLATPAK_DEST}/
+      - ln -s ../share ${FLATPAK_DEST}/usr/share
       - install -Dm644 org.genivi.DLTViewer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/org.genivi.DLTViewer.metainfo.xml
     sources:
       - type: archive
