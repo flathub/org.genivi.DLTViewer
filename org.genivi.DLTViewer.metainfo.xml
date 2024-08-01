@@ -19,17 +19,18 @@
   <url type="bugtracker">https://github.com/COVESA/dlt-viewer/issues</url>
   <content_rating type="oars-1.1"/>
   <releases>
-    <release version="v2.25.0" date="2023-12-14"/>
-    <release version="v2.24.0" date="2023-06-19"/>
-    <release version="v2.23.0" date="2022-12-21"/>
-    <release version="v2.22.0" date="2022-04-23"/>
-    <release version="v2.21.2" date="2021-03-25"/>
-    <release version="v2.21.1" date="2020-11-03"/>
-    <release version="v2.20.3" date="2020-11-03"/>
-    <release version="v2.20.2" date="2020-07-28"/>
-    <release version="v2.20.1" date="2020-06-18"/>
-    <release version="v2.20.0" date="2020-04-14"/>
-    <release version="v2.19.0" date="2019-07-25"/>
-    <release version="v2.18.0" date="2016-10-18"/>
+    <release version="2.26.0" date="2024-07-16"/>
+    <release version="2.25.0" date="2023-12-14"/>
+    <release version="2.24.0" date="2023-06-19"/>
+    <release version="2.23.0" date="2022-12-21"/>
+    <release version="2.22.0" date="2022-04-23"/>
+    <release version="2.21.2" date="2021-03-25"/>
+    <release version="2.21.1" date="2020-11-03"/>
+    <release version="2.20.3" date="2020-11-03"/>
+    <release version="2.20.2" date="2020-07-28"/>
+    <release version="2.20.1" date="2020-06-18"/>
+    <release version="2.20.0" date="2020-04-14"/>
+    <release version="2.19.0" date="2019-07-25"/>
+    <release version="2.18.0" date="2016-10-18"/>
   </releases>
 </component>
