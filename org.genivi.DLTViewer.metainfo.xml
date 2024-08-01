@@ -3,7 +3,7 @@
   <id>org.genivi.DLTViewer</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>DLT Viewer</name>
-  <summary>Diagnostic Log and Trace viewing program</summary>
+  <summary>Diagnostic Log and Trace Viewer</summary>
   <description>
     <p>Read, inspect and analyze logs of Embedded Control Units (ECU) tipically found in the automotive field. DLT Viewer is based on the AUTOSAR 4.0 standard DLT.</p>
   </description>
