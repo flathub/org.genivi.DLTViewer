@@ -10,6 +10,7 @@
   <screenshots>
     <screenshot type="default">
       <image type="source">https://raw.githubusercontent.com/COVESA/dlt-viewer/8f27280b9bc0e8a8e00acc024abc27749f1d0271/doc/images/main_window_plain.png</image>
+      <caption>Main window</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.genivi.DLTViewer.desktop</launchable>
