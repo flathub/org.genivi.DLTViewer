@@ -7,6 +7,10 @@
   <description>
     <p>Read, inspect and analyze logs of Embedded Control Units (ECU) tipically found in the automotive field. DLT Viewer is based on the AUTOSAR 4.0 standard DLT.</p>
   </description>
+  <branding>
+    <color type="primary" scheme_preference="light">#f9f06b</color>
+    <color type="primary" scheme_preference="dark">#9c9428</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <image type="source">https://raw.githubusercontent.com/COVESA/dlt-viewer/8f27280b9bc0e8a8e00acc024abc27749f1d0271/doc/images/main_window_plain.png</image>
