@@ -26,8 +26,8 @@ modules:
       - install -Dm644 org.genivi.DLTViewer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/org.genivi.DLTViewer.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/COVESA/dlt-viewer/archive/2.26.2.tar.gz
-        sha256: 1bdcc50f125bdf55c9f21c7e6a7c701abac7d192dae93cdae02a760da150cc35
+        url: https://github.com/COVESA/dlt-viewer/archive/2.27.0.tar.gz
+        sha256: 349d0245b0a7d7758a562a98863626060fbc57e5a1d1b688f90cc867fe787fa6
         x-checker-data:
           type: json
           url: https://api.github.com/repos/COVESA/dlt-viewer/releases/latest
